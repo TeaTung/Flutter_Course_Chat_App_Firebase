@@ -15,6 +15,7 @@ class _NewMessageState extends State<NewMessage> {
     Firestore.instance.collection('chat').add({
       'text': _enteredMessage,
       'createAt': Timestamp.now(),
+      'userId' :
     });
     _controller.clear();
   }
